@@ -10,14 +10,14 @@ export default function Footer() {
         <span>
           <h2>About</h2>
           <ul>
-            <li>How TITech Airbnb works</li>
+            <li>How TITech works</li>
             <li>Newsroom</li>
-            <li>Airbnb 2021</li>
+            <li>TITech 2021</li>
             <li>Investors</li>
-            <li>Airbnb Plus</li>
-            <li>Airbnb Luxe</li>
+            <li>TITech Plus</li>
+            <li>TITech Luxe</li>
             <li className="lg-hidden">HotelTonight</li>
-            <li className="lg-hidden">TITech Airbnb for Work</li>
+            <li className="lg-hidden">TITech for Work</li>
             <li className="lg-hidden">Made possible by Hosts</li>
             <li className="lg-hidden">Careers</li>
             <li className="lg-hidden">Founders&apos; Letter</li>
@@ -28,10 +28,10 @@ export default function Footer() {
           <ul>
             <li>Diversity & Belonging</li>
             <li>Accessibility</li>
-            <li>TITech Airbnb Associates</li>
+            <li>TITech Associates</li>
             <li>Frontline Stays</li>
             <li>Guest Referrals</li>
-            <li>TITechAirbnb.org</li>
+            <li>TITech.org</li>
           </ul>
         </span>
         <span>
@@ -81,7 +81,7 @@ export default function Footer() {
           <p>
             &copy; 2021{" "}
             <a href="https://hardcore-kirch-16b7ec.netlify.app/" target="_blank" rel="noreferrer">
-              Dash Santosh
+              Igune Justine Robert
             </a>
           </p>
         </span>
