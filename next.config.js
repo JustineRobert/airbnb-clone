@@ -1,6 +1,14 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['links.papareact.com'],
+    domains: [
+      "links.papareact.com",
+      "lh3.googleusercontent.com",
+      "abs.twimg.com",
+      "platform-lookaside.fbsbx.com",
+      "avatars.githubusercontent.com",
+      "a0.muscache.com",
+      "vercel.com"
+    ],
   },
 };

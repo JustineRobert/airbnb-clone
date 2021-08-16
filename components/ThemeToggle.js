@@ -10,10 +10,10 @@ const ThemeToggle = ({ text, icon, className }) => {
   useEffect(() => {
     if (isDark) {
       document.body.classList.add("dark");
-      window.localStorage.setItem("airbnbTheme", "dark");
+      window.localStorage.setItem("titechTheme", "dark");
     } else {
       document.body.classList.remove("dark");
-      window.localStorage.setItem("airbnbTheme", "light");
+      window.localStorage.setItem("titechTheme", "light");
     }
   }, [isDark]);
 

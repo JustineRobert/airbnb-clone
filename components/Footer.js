@@ -48,6 +48,7 @@ export default function Footer() {
         <span>
           <h2>Support</h2>
           <ul>
+            <li>Donate to support Us</li>
             <li>Our COVID-19 Response</li>
             <li>Help Centre</li>
             <li>Cancellation options</li>
@@ -70,12 +71,21 @@ export default function Footer() {
             </span>
             <span>
               <Facebook />
+              <a href="https://www.facebook.com/groups/2270270053089788" target="_blank" rel="noreferrer">
+              TITech Africa
+            </a>
             </span>
             <span>
               <Twitter />
+              <a href="https://www.facebook.com/groups/2270270053089788" target="_blank" rel="noreferrer">
+              TITech Africa
+            </a>
             </span>
             <span>
               <Instagram />
+              <a href="https://www.facebook.com/groups/2270270053089788" target="_blank" rel="noreferrer">
+              TITech Africa
+            </a>
             </span>
           </p>
           <p>
