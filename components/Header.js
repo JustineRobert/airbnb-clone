@@ -74,7 +74,10 @@ function Header() {
     <header className="sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:py-10">
       
       {/*Left-Logo*/}
-      <div className="relative flex items-center h-10 cursor-pointer my-auto">
+      <div 
+        onClick={() => router.push("/")}
+        className={!searchStatus ? "flex relative items-center h-10 cursor-pointer my-auto" : "hidden"}
+      > 
         <Image className="cursor-pointer active:scale-90"
         src="https://vercel.com/api/www/avatar/c819693a21cb278a8c93e5f46c6ad1eeafc89b79?s=160"
         layout="fill"

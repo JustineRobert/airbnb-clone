@@ -77,13 +77,13 @@ export default function Footer() {
             </span>
             <span>
               <Twitter />
-              <a href="https://www.facebook.com/groups/2270270053089788" target="_blank" rel="noreferrer">
+              <a href="https://twitter.com/AfricaTitech" target="_blank" rel="noreferrer">
               TITech Africa
             </a>
             </span>
             <span>
               <Instagram />
-              <a href="https://www.facebook.com/groups/2270270053089788" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/titechafrica/?hl=en" target="_blank" rel="noreferrer">
               TITech Africa
             </a>
             </span>

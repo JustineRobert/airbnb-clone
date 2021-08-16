@@ -1,15 +1,15 @@
-import Head from 'next/head'
-import Banner from '../components/Banner'
-import Header from '../components/Header'
-import SmallCard from '../components/SmallCard';
-import MediumCard from '../components/MediumCard';
-import LargeCard from '../components/LargeCard';
-import Footer from '../components/Footer';
-//import Login from '../components/Login';
+import Head from "next/head";
+import Banner from "../components/Banner";
+import Header from "../components/Header";
+import SmallCard from "../components/SmallCard";
+import MediumCard from "../components/MediumCard";
+import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
+//import Login from "../components/Login";
 import Fade from "react-reveal/Fade";
 import { getSession } from "next-auth/client";
 import { live, discover } from "../data";
-import Cards from '../components/Cards';
+import Cards from "../components/Cards";
 
 export default function Home({ exploreData, cardsData, session }) {
   {/*if(!session) return <Login /> */}
