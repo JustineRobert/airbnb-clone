@@ -84,6 +84,7 @@ function Header() {
         objectFit="contain"
         objectPosition="left"
         />
+        <span className="flex items-center ml-12 space-x-4 justify-end text-green-400">TITech Africa</span>
       </div>
 
       {/*Middle-Search*/}

@@ -11,6 +11,8 @@ import Map from "../components/Map";
 const Search = ({ session, londonResults, monctonResults, halifaxResults, newYorkResults }) => {
     if (!session) return <Login />
 
+    console.log(searchResults);
+
     const router = useRouter();
 
     //ES6 Destructuring
@@ -88,16 +90,31 @@ const Search = ({ session, londonResults, monctonResults, halifaxResults, newYor
     )
 }
 
-export async function getServerSideProps(context) {
-    const session = await getSession(context);
 
-    const londonResults = await fetch("https://airbnb-api.vercel.app/london").then((res) => res.json());
-    const monctonResults = await fetch("https://airbnb-api.vercel.app/moncton").then((res) => res.json());
-    const halifaxResults = await fetch("https://airbnb-api.vercel.app/halifax").then((res) => res.json());
-    const newYorkResults = await fetch("https://airbnb-api.vercel.app/newyork").then((res) => res.json());
-
+export async function getServerSideProps() {
+    const searchResults = await fetch("https://links.papareact.com/isz").then(
+      (data) => data.json()
+    );
     return {
-        props: {
+      props: {
+        searchResults,
+      },
+    };
+  }
+  
+
+
+
+//export async function getServerSideProps(context) {
+    //const session = await getSession(context); 
+
+   // const londonResults = await fetch("https://airbnb-api.vercel.app/london").then((res) => res.json());
+   // const monctonResults = await fetch("https://airbnb-api.vercel.app/moncton").then((res) => res.json());
+   // const halifaxResults = await fetch("https://airbnb-api.vercel.app/halifax").then((res) => res.json());
+    //const newYorkResults = await fetch("https://airbnb-api.vercel.app/newyork").then((res) => res.json());
+
+   /* return {
+       // props: {
             session,
             londonResults,
             monctonResults,
@@ -105,6 +122,7 @@ export async function getServerSideProps(context) {
             newYorkResults
         }
     }
-}
+} */
 
-export default Search;
+//export default Search; 
+
