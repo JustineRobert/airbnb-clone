@@ -6,17 +6,14 @@ import {
   UserCircleIcon,
   UsersIcon
  } from '@heroicons/react/solid';
-import { signOut, useSession } from "next-auth/client";
-import { useEffect, useState } from "react";
 import "react-date-range/dist/styles.css"; //main style file
 import "react-date-range/dist/theme/default.css"; //theme css file
 import { DateRangePicker } from "react-date-range";
-import { DateRange } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
  
 
 function Header() {
-  const [session] = useSession();
+
   const router = useRouter();
 
   const [searchInput, setSearchInput] = useState("");
@@ -53,8 +50,8 @@ function Header() {
         setSearchInput("");
     }
 
-    const [searchStatus, setSearchStatus] = useState(false);
-    const [scroll, setScroll] = useState(false);
+    const [searchStatus] = useState(false);
+    const [setScroll] = useState(false);
 
     useEffect(() => {
         const onScroll = () => {
@@ -87,7 +84,7 @@ function Header() {
         <span className="flex items-center ml-12 space-x-4 justify-end text-green-400">TITech Africa</span>
       </div>
 
-      {/*Middle-Search*/}
+      {/*Middle-Search*/}u
       <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
         <input 
           value={searchInput}
